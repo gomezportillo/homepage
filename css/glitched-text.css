@@ -1,13 +1,13 @@
 /* Adapted from https://ihatetomatoes.net/how-to-create-css-glitch-effect/ */
 
-.glitch
+.glitched-text
 {
 	font-family: 'Pixel', sans-serif;
 	font-size: 25px;
 	position: relative;
 }
 
-.glitch::before
+.glitched-text::before
 {
 	display: block;
 	content:attr(text);
@@ -21,13 +21,13 @@
 	z-index: -1;
 }
 
-.glitch.emoji::before
+.glitched-text.emoji::before
 {
 	color: transparent;
 	text-shadow: 0 0 0 #0ff;
 }
 
-.glitch::after
+.glitched-text::after
 {
 	display: block;
 	content:attr(text);
@@ -41,13 +41,13 @@
 	z-index: -2;
 }
 
-.glitch.emoji::after
+.glitched-text.emoji::after
 {
 	color: transparent;
 	text-shadow: 0 0 0 #f0f;
 }
 
-@keyframes glitch
+@keyframes glitched-text
 {
 	0% {
 		transform: translate(0);
@@ -69,12 +69,12 @@
 	}
 }
 
-.glitch:hover::before
+.glitched-text:hover::before
 {
-	animation: glitch .4s cubic-bezier(.25, .46, .45, .94) both infinite
+	animation: glitched-text .4s cubic-bezier(.25, .46, .45, .94) both infinite
 }
 
-.glitch:hover::after
+.glitched-text:hover::after
 {
-	animation: glitch .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+	animation: glitched-text .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite
 }
