@@ -10,6 +10,12 @@
   top: 0%;
 }
 
+.image-clock
+{
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
 .clock-face {
   position: absolute;
   top: 12%;
