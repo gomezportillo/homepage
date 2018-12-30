@@ -3,16 +3,17 @@
 .clock {
   width: 10rem;
   height: 10rem;
-  margin: 20px auto;
-  position: relative;
-  transform: translate(340%, -17%);
-  z-index: 15;
+  margin: 0px auto;
+  position: fixed;
+  z-index: 1;
+  right: 6.9%;
+  top: 0%;
 }
 
 .clock-face {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 12%;
+  left: 9%;
   width: 80%;
   height: 80%;
   z-index: 1;
