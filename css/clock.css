@@ -10,6 +10,7 @@
   top: 0%;
 }
 
+/* Clock shadow */
 .image-clock
 {
   -webkit-filter: drop-shadow(1px 1px 1px #222);
@@ -35,7 +36,7 @@
   border-radius: 18px;
   margin-left: -9px;
   margin-top: -6px;
-  background: #283e5d;
+  background: #5b4b35;
   z-index: 11;
 }
 
@@ -43,7 +44,7 @@
   width: 50%;
   right: 50%;
   height: 6px;
-  background: #171631;
+  background: #3a1f2c;
   position: absolute;
   top: 50%;
   border-radius: 6px;
@@ -67,6 +68,6 @@
 .hand.second-hand {
   height: 1px;
   width: 30%;
-  background: #a83451;
+  background: #7d5b35;
   z-index: 10;
 }
