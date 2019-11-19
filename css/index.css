@@ -25,7 +25,7 @@ body
 #centered
 {
   position: absolute;
-  top: 28%;
+  top: 29%;
   left: 53%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
@@ -34,7 +34,7 @@ body
 .content-container
 {
   position: absolute;
-  top: 42%;
+  top: 43%;
   left: 53.5%;
   transform: translate(-50%, -50%);
 }
@@ -63,7 +63,7 @@ body
 {
   width: 65px;
   height: 65px;
-  margin: 20px;
+  margin: 25px;
 }
 
 .container .image
@@ -75,14 +75,13 @@ body
 
 .image
 {
-  transition: transform .2s;
-  transition: opacity .2s;
+  transition: all .25s cubic-bezier(0, 0.8, 1, 1.6);
 }
 
-.image:hover
+.image.active
 {
   opacity: .7;
-  transform: scale(1.2);
+  transform: scale(1.25);
 }
 
 h1

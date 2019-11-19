@@ -1,49 +1,55 @@
+function removeAllActives()
+{
+	$('.content').removeClass('active').hide();
+	$('.image').removeClass('active');
+
+	$('#gamesIcon').attr("src", "images/icons/gameboy.png");
+	$('#workIcon').attr("src", "images/icons/darksouls.png");
+}
+
 $( function()
 {
-	
-	$('#chan').mouseover( function()
+	$('#blogs').mouseover( function()
 	{
-		if($('.content').hasClass('active'))
-		{
-			$('.content').removeClass('active').hide();
-		}
-		$('#4chanList').addClass('active').show('300');
+		removeAllActives();
+
+		$('#blogList').addClass('active').show('300');
+		$('#blogIcon').addClass('active');
 	});
 
 	$('#music').mouseover( function()
 	{
-		if($('.content').hasClass('active'))
-		{
-			$('.content').removeClass('active').hide();
-		}
+		removeAllActives();
+
 		$('#musicList').addClass('active').show('300');
+		$('#musicIcon').addClass('active');
 	});
 
 	$('#games').mouseover( function()
 	{
-		if($('.content').hasClass('active'))
-		{
-			$('.content').removeClass('active').hide();
-		}
+		removeAllActives();
+
 		$('#gamesList').addClass('active').show('300');
+		$('#gamesIcon').addClass('active');
+
+		$('#gamesIcon').attr("src", "images/icons/gameboy.gif");
 	});
 
 	$('#work').mouseover( function()
 	{
-		if($('.content').hasClass('active'))
-		{
-			$('.content').removeClass('active').hide();
-		}
+		removeAllActives();
+
 		$('#workList').addClass('active').show('300');
+		$('#workIcon').addClass('active');
+
+		$('#workIcon').attr("src", "images/icons/darksouls.gif");
 	});
 
 	$('#resources').mouseover( function()
 	{
-		if($('.content').hasClass('active'))
-		{
-			$('.content').removeClass('active').hide();
-		}
-		$('#resourceList').addClass('active').show('300');
-	});
+		removeAllActives();
 
+		$('#resourceList').addClass('active').show('300');
+		$('#resourceIcon').addClass('active');
+	});
 });
